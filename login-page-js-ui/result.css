@@ -1,0 +1,31 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body{
+        background-color: darkgray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+       
+        
+}
+.Main{
+        width: 100%;
+        max-width: max-content;
+        height: 300px;
+        max-height: 100%;
+        font-size: large;
+        color: black;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 25px;
+        line-height: 50px;
+}
+a{
+        font-size: 25px;
+        font-weight: 800;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Password </title>
+    <link rel="shortcut icon" href="Random-Password-Image.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header-text">
+        <img class="header-photo" src="./Govind Logo.png" alt="Govind Logo">
+        <h1 class="text">Random Password</h1>
+        <img class="header-github-photo" src="./icons8-github.svg" alt="github-image">
+    </header>
+
+    <div class="war">
+        <span>&lt;</span>
+        <span>&gt;</span>
+        <span>&le;</span>
+        <span>&ge;</span>
+        <span>&plusmn;</span>
+        <span>&ne;</span>
+        <span>&divide;</span>
+        <span>&times;</span>
+        <span>&minus;</span>
+        <span>&alefsym;</span>
+        <span>&fnof;</span>
+        <span>&#64;</span>
+        <span>&#8482;</span>
+        <span>&#8469;</span>
+        <span>&#8473;</span>
+        <span>&#8475;</span>
+        <span>&#8481;</span>
+        <span>&#8484;</span>
+        <span>&#8490;</span>
+    </div>
+
+    <div class="main">
+        <div class="box">
+          <span id="password-name">Password Generate</span>
+            <span id="pass-box">Testing</span>
+            <div class="row">
+                <div>
+                    Password length
+                </div>
+                <div>
+                    <input type="number" name="" id="totalchar" max="20" min="6" value="" />
+                </div>
+            </div>
+            <div class="row">
+                    <div>
+                      Include uppercase letters
+                    </div>
+                <div>
+                    <input type="checkbox" name="" id="uppercase"/>
+                </div>
+            </div>
+            <div class="row">
+                   <div>
+                     Include lowercase letters
+                   </div>
+               <div>
+                   <input type="checkbox" name="" id="lowercase"/>
+               </div>
+           </div>
+            
+            <div class="row">
+                    <div>
+                   Include Numbers
+                    </div>
+                <div>
+                    <input type="checkbox" name="" id="numbers" />
+                </div>
+            </div>
+            <div class="row">
+                   <div>
+                      Include symbols
+                   </div>
+               <div>
+                   <input type="checkbox" name="" id="symbols"/>
+               </div>
+           </div>
+            <div class="row">
+                <button id="btn">
+                    Generate Password
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  overflow: hidden;
+  background-color: #111;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.controls {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  gap: 1rem;
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.controls button:hover {
+  background-color: #444;
+}
+
+.sky {
+  height: 100vh;
+  width: 100%;
+  background-image: url("Image/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.trees {
+  height: 100vh;
+  width: 100%;
+  background-image: url("Image/trees.png");
+  background-size: cover;
+  position: absolute;
+  top: -144px;
+}
+
+.track {
+  height: 60vh;
+  width: 800vw;
+  background-image: url("Image/track.png");
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 70vh;
+  animation: carMove linear 30s infinite;
+  animation-play-state: paused;
+}
+
+.car {
+  height: 100px;
+  width: 380px;
+  background-image: url("Image/car_body.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 44px;
+  bottom: 30vh;
+  animation: shake linear 0.1s infinite;
+  animation-play-state: paused;
+}
+
+.wheel1 img,
+.wheel2 img {
+  width: 77px;
+  animation: wheelRotation linear 0.3s infinite;
+  animation-play-state: paused;
+}
+
+.wheel1 img {
+  position: relative;
+  top: 42px;
+  left: 42px;
+}
+
+.wheel2 img {
+  position: relative;
+  top: -39px;
+  left: 235px;
+}
+
+@keyframes wheelRotation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes carMove {
+  100% {
+    transform: translateX(-500vw);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}

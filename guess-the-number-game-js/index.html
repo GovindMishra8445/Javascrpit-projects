@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Number Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./photo/Guess-a-number.png" type="image/G-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header-text">
+      <img class="header-photo" src="./photo/Govind Logo.png" alt="Govind Mishra">
+      <h1 class="text">Guess number Game</h1>
+      <img class="header-github-photo" src="/photo/icons8-github.svg" alt="github-image">
+    </header>
+    <div class="main-container">
+       <div class="container">
+        <p class="heading">Enter a Guess Between 0 to 100</p>
+    <form>
+      <input
+        class="user-input"
+        type="number"
+        placeholder="Enter The Number"
+        max="100"
+        min="0"
+        required
+      />
+      <div>
+        <button class="submit-btn">Submit</button>
+        <button type="button" class="start-game" disabled >Start Game</button>
+      </div>
+    </form>
+    <p class="result"></p>
+    <p class="all-guesses"></p>
+       </div>
+    </div>
+
+    <!-- <footer class="footer">Govind Mishra 🧡🤍💚</footer> -->
+  </body>
+</html>

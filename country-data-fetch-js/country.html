@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/country.css" />
+    <script src="/country.js" defer></script>
+  </head>
+  <body class="dark">
+    <header class="header-container">
+      <div class="header-content">
+        <h1 class="title"><a href="/">Where in the world?</a></h1>
+        <p class="theme-changer"><i class="fa-regular fa-moon"></i>&nbsp; Dark mode</p>
+      </div>
+    </header>
+    <main>
+      <div class="country-details-contenar">
+          <span class="back-button" onclick="history.back()">
+               <i class="fa-solid fa-arrow-left"></i>&nbsp; Back
+               </span>
+             <div class="country-detalis">
+               <img src="" alt="" />
+               <div class="details-text-contener">
+                 <h1>India</h1>
+                 <div class="details-text">
+                   <p><b>Native Name:</b><span class="native-name"></span></p>
+                   <p><b>Population:</b><span class="Population"></span></p>
+                   <p><b>Region:</b><span class="region"></span></p>
+                   <p><b>Sub Region:</b><span class="sub-region"></span></p>
+                   <p><b>Capital:</b><span class="capital"></span></p>
+                   <p>
+                     <b>Top Level Domain:</b><span class="top-level-domain"></span>
+                   </p>
+                   <p><b>Curency:</b><span class="curency"></span></p>
+                   <p><b>Language:</b><span class="language"></span></p>
+                 </div>
+                 <div class="border-country">
+                     <b>border Country: </b> &nbsp;
+                 </div>
+               </div>
+             </div>
+      </div>
+    </main>
+  </body>
+</html>
